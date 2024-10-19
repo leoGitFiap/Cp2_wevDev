@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <h1 class="logo">Loja de Bicicletas</h1>
-    <nav>
-        <ul>
-            <li><a href="Sobre.html">Sobre</a></li>
-            <li><a href="Quiz.html">Quiz</a></li>
-            <li><a href="Contato.html">Contato</a></li>
-            <div class="mudarCor">
-                <input type="button" class="cor" onclick="trocar('#3aeeb1')"/>
-                <input type="button" class="cor" onclick="trocar('#c13af2')"/>
-                <input type="button" class="cor" onclick="trocar('#fbff24')"/>
-            </div>
-        </ul>
-    </nav>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -21,13 +8,51 @@
     <link rel="stylesheet" href="./src/css/home.css">
 </head>
 <body>
+    <header>
+        <h1 class="logo">Loja de Bicicletas</h1>
+        <div class="mudarCor">
+            <input type="button" class="cor" onclick="trocar('black')"/>
+            <input type="button" class="cor" onclick="trocar('red')"/>
+            <input type="button" class="cor" onclick="trocar('blue')"/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <hr>
-    <p class="p">Olá, nesta loja vendemos bicicletas de todos os tipos!!!</p>
-    <table class="table">
-        <tr>bike1</tr>
-        <tr>bike2</tr>
-        <tr>bike3</tr>
-    </table>
+    <section>
+        <p class="p">Olá, nesta loja vendemos bicicletas de todos os tipos!!!</p>
+        <div class="div">
+            <img id="imagehome"/>
+        </div>
+        <h3 class="h3">Tabela de motocicletas</h3>
+        <table id="table" border="3">
+            <tr>
+                <th class="a">Honda Shadow 750</th>
+                <th class="a">Yamaha YZ 250F</th>
+                <th class="a">Harley-Davidson Sportster 883</th>
+            </tr>
+            <tr>
+                <td><img height="300" width="400" src="./src/assets/bike1.jpeg" alt=""></td>
+                <td><img height="300" width="400" src="./src/assets/bike2.jpg" alt=""></td>
+                <td><img height="300" width="400" src="./src/assets/bike3.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td class="a">2014</td>
+                <td class="a">2023</td>
+                <td class="a">2013</td>
+            </tr>
+            <tr>
+                <td><button class="button">Comprar</button></td>
+                <td><button class="button">Comprar</button></td>
+                <td><button class="button">Comprar</button></td>
+            </tr>
+        </table>
+    </section>
     <!--Chamnedo o js externo-->
     <script src="./src/js/home.js"></script>
 </body>
