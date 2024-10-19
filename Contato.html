@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <h1 class="logo">Loja de Bicicletas</h1>
-    <nav>
-        <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Sobre.html">Sobre</a></li>
-            <li><a href="Quiz.html">Quiz</a></li>
-            <div class="mudarCor">
-                <input type="button" class="cor" onclick="trocar('#3aeeb1')"/>
-                <input type="button" class="cor" onclick="trocar('#c13af2')"/>
-                <input type="button" class="cor" onclick="trocar('#fbff24')"/>
-            </div>
-        </ul>
-    </nav>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
@@ -21,6 +8,21 @@
     <link rel="stylesheet" href="./src/css/contato.css">
 </head>
 <body>
+    <header>
+        <h1 class="logo">Loja de Bicicletas</h1>
+        <div class="mudarCor">
+            <input type="button" class="cor" onclick="trocar('black')"/>
+            <input type="button" class="cor" onclick="trocar('red')"/>
+            <input type="button" class="cor" onclick="trocar('blue')"/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <!--Chamnedo o js externo-->
     <script src="./src/js/contato.js"></script>
 </body>
